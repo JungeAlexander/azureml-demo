@@ -1,3 +1,5 @@
 azureml-core
 jupyterlab
+matplotlib
+numpy
 tensorflow
