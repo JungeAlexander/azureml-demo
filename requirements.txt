@@ -1,4 +1,5 @@
 azureml-core
+black
 jupyterlab
 matplotlib
 numpy
