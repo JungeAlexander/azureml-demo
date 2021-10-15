@@ -1,6 +1,9 @@
 # To add a new cell, type '# %%'
 # To add a new markdown cell, type '# %% [markdown]'
 # %%
+import os
+from pathlib import Path
+
 import numpy as np
 from tensorflow import keras
 from tensorflow.keras import layers
@@ -28,6 +31,29 @@ print(x_test.shape[0], "test samples")
 # convert class vectors to binary class matrices
 y_train = keras.utils.to_categorical(y_train, num_classes)
 y_test = keras.utils.to_categorical(y_test, num_classes)
+
+
+# %%
+out_dir = Path("./data/mnist")
+os.makedirs(out_dir, exist_ok=True)
+file_type = ".npy"
+file_names = ("x_train", "y_train", "x_test", "y_test")
+file_paths = [out_dir / (fn + file_type) for fn in file_names]
+
+
+# %%
+# save data
+for a, fp in zip((x_train, y_train, x_test, y_test), file_paths):
+    with open(fp, "wb") as fout:
+        np.save(fout, a)
+
+
+# %%
+# load data
+x_train = np.load(file_paths[0])
+y_train = np.load(file_paths[1])
+x_test = np.load(file_paths[2])
+y_test = np.load(file_paths[3])
 
 
 # %%
