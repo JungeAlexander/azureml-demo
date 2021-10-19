@@ -1,6 +1,7 @@
 absl-py==0.14.1
 adal==1.2.7
 anyio==3.3.3
+appdirs==1.4.4
 appnope==0.1.2
 argon2-cffi==21.1.0
 astunparse==1.6.3
@@ -19,7 +20,7 @@ Babel==2.9.1
 backcall==0.2.0
 backports.tempfile==1.0
 backports.weakref==1.0.post1
-black==21.9b0
+black==21.7b0
 bleach==4.1.0
 cachetools==4.2.4
 certifi==2021.10.8
@@ -50,6 +51,7 @@ isodate==0.6.0
 jedi==0.18.0
 jeepney==0.7.1
 Jinja2==3.0.2
+jiwer==2.2.0
 jmespath==0.10.0
 json5==0.9.6
 jsonpickle==2.0.0
@@ -102,6 +104,7 @@ pyOpenSSL==20.0.1
 pyparsing==2.4.7
 pyrsistent==0.18.0
 python-dateutil==2.8.2
+python-Levenshtein==0.12.2
 pytz==2021.3
 pyzmq==22.3.0
 regex==2021.10.8
@@ -126,7 +129,7 @@ testpath==0.5.0
 tomli==1.2.1
 tornado==6.1
 traitlets==5.1.0
-typing-extensions==3.10.0.2
+typing-extensions==3.7.4.3
 urllib3==1.26.6
 wcwidth==0.2.5
 webencodings==0.5.1
