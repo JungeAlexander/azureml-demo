@@ -4,4 +4,5 @@ jiwer
 jupyterlab
 matplotlib
 numpy
+pandas
 tensorflow
